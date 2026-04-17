@@ -1,14 +1,17 @@
 package com.pluralsight;
 
+
+//Creating a class (vehicle) to store the vehicle identifications (blueprint), making sure they are private
 public class Vehicle {
-    //Creating a class that contains the vehicle identifications, making sure they are private
+
+    //Creating properties of each vehicle
     private long vehicleId;
     private String makeModel;
     private String color;
     private int odometerReading;
     private float price;
 
-    // Assigning all the properties of the vehicle with set and getters
+    // Assigning all the properties of the vehicle with constructors
     public Vehicle(long vehicleId, String makeModel, String color, int odometerReading, float price) {
         this.vehicleId = vehicleId;
         this.makeModel = makeModel;
@@ -16,6 +19,9 @@ public class Vehicle {
         this.odometerReading = odometerReading;
         this.price = price;
     }
+
+
+    //Creating getters and setters that will allow me to read and change any private field
 
     public long getVehicleId() {
         return vehicleId;
@@ -28,6 +34,7 @@ public class Vehicle {
     public String getMakeModel() {
         return makeModel;
     }
+
 
     public void setMakeModel(String makeModel) {
         this.makeModel = makeModel;
