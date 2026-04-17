@@ -95,7 +95,7 @@ public class VehicleInventoryApp {
             }
 
             if (!found) {
-                System.out.println("No vehicles found.");
+                System.out.println("No vehicles found.");  
             }
         }
 
